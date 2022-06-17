@@ -1,0 +1,219 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+}
+
+/* desktop-version */
+
+/* cabecalho */
+.cabecalho{
+    background-color: #DEDDDE;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 40%;
+    flex-basis: 2;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-right: 5px;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.menu ul li a:hover{
+    color: white;
+}
+
+.menu form{
+    display: flex;
+    justify-content: center;
+}
+
+.menu form input{
+    border: none;
+    width: 70%;
+    padding: 10px;
+    border-radius: 25px 0 0 25px;
+}
+
+.menu form button{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 0  25px 25px 0 ;
+    cursor: pointer;
+}
+
+/* principal */
+.principal{
+    background-color: #f0eef0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    padding: 2%;
+    width: 25%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h2{
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+
+.card p{
+    margin: 5% 0;
+}
+
+.card button{
+    margin-top: 10%;
+    padding: 10px;
+    width: 70%;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px 10px;
+}
+
+.card button:hover{
+    background-color: gray;
+}
+
+/* rodapé */
+.rodape{
+    background-color: #DEDDDE;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 1024px) {
+.cabecalho{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.logo{
+    width: 100%;
+}
+
+.menu{
+    width: 100%;
+}
+
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 45%;
+}
+
+}
+
+@media only screen and (max-width: 700px) {
+    .cabecalho{
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    .logo{
+        width: 100%;
+    }
+    
+    .menu{
+        width: 100%;
+    }
+
+    .principal{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 45%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .cabecalho{
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    .logo{
+        width: 100%;
+    }
+    
+    .menu{
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu ul{
+        width: 100%;
+    }
+
+    .menu form{
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .principal{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 100%;
+    }
+
+}
